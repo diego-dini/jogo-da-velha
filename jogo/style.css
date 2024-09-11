@@ -1,0 +1,26 @@
+:root {
+  --img-size: 160px
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.game {
+  display: grid;
+  grid-template-columns: calc(var(--img-size) + 10px) calc(var(--img-size) + 10px) calc(var(--img-size) + 10px);
+  max-width: calc(var(--img-size) * 3 + 30px);
+  max-height: calc(var(--img-size) * 3 + 30px);
+}
+
+.game img {
+  border: 5px solid black;
+  height: var(--img-size);
+  width: var(--img-size);
+}
+
+.game img:hover {
+  background-color: rgb(150,150 ,150,0.5);
+}
